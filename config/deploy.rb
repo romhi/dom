@@ -3,7 +3,7 @@ lock '3.9.0'
 
 set :application, 'dom'
 set :repo_url, 'git@github.com:romhi/dom.git'
-# set :branch, 'master'
+set :branch, 'master'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -26,6 +26,7 @@ set :repo_url, 'git@github.com:romhi/dom.git'
 
 # Default value for :linked_files is []
 # append :linked_files, 'config/database.yml', 'config/secrets.yml'
+
 set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml', 'config/puma.rb')
 
 # Default value for linked_dirs is []
@@ -44,5 +45,5 @@ set :puma_conf, "#{shared_path}/config/puma.rb"
 namespace :deploy do
   before 'check:linked_files', 'puma:config'
   before 'check:linked_files', 'puma:nginx_config'
-  after 'puma:smart_restart', 'nginx:restart'
+  after 'puma:restart', 'nginx:restart'
 end
