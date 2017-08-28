@@ -5,7 +5,7 @@ require 'capistrano/deploy'
 require 'capistrano/scm/git'
 install_plugin Capistrano::SCM::Git
 require 'whenever/capistrano'
-require 'thinking_sphinx/capistrano'
+# require 'thinking_sphinx/capistrano'
 
 # Include tasks from other gems included in your Gemfile
 #
