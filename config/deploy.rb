@@ -26,7 +26,7 @@ set :puma_init_active_record, true
 # set :format_options, command_output: true, log_file: 'log/capistrano.log', color: :auto, truncate: :auto
 
 # Default value for :pty is false
-# set :pty, true
+set :pty, true
 
 # Default value for :linked_files is []
 # append :linked_files, 'config/database.yml', 'config/secrets.yml'
@@ -47,7 +47,7 @@ set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', '
 set :puma_conf, "#{shared_path}/config/puma.rb"
 
 namespace :deploy do
-  before 'check:linked_files', 'puma:config'
-  before 'check:linked_files', 'puma:nginx_config'
-  after 'puma:smart_restart', 'nginx:restart'
+  # before 'check:linked_files', 'puma:config'
+  # before 'check:linked_files', 'puma:nginx_config'
+  # after 'puma:smart_restart', 'nginx:restart'
 end
