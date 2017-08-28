@@ -224,8 +224,9 @@ PLATFORMS
 
 DEPENDENCIES
   byebug
-  capistrano (~> 3.6)
-  capistrano-rails (~> 1.1)
+  capistrano
+  capistrano-bundler
+  capistrano-rails
   capistrano-rvm
   capistrano-upload-config
   capistrano3-nginx
