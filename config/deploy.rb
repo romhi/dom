@@ -3,7 +3,11 @@ lock '3.9.0'
 
 set :application, 'dom'
 set :repo_url, 'git@github.com:romhi/dom.git'
-set :branch, 'master'
+
+set :deploy_to, "/home/deployer/apps/#{fetch(:application)}"
+
+set :puma_threads,    [4, 16]
+set :puma_init_active_record, true
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
