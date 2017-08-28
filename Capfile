@@ -1,4 +1,5 @@
 # Include default deployment tasks
+require 'capistrano/setup'
 require "capistrano/deploy"
 
 # Include capistrano-rails
