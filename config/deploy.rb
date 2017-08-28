@@ -1,5 +1,5 @@
 # Change these
-server '178.162.199.139', port: 22, roles: [:web, :app, :db], primary: true
+server '178.162.199.139', roles: [:web, :app, :db], primary: true
 
 set :repo_url,       ' git@github.com:romhi/dom.git'
 set :application,     'dom'
