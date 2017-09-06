@@ -20,6 +20,17 @@ gem 'uglifier', '>= 1.3.0'
 gem 'therubyracer', platforms: :ruby
 gem 'haml'
 gem 'meta-tags'
+gem 'will_paginate'
+gem 'will_paginate-bootstrap'
+gem 'default_value_for'
+gem 'simple_form'
+gem 'bootstrap-sass'
+gem 'bootstrap-wysihtml5-rails'
+gem 'bootstrap-editable-rails'
+gem 'font-awesome-rails'
+gem 'jquery-rails'
+gem 'jquery-ui-rails'
+gem 'jqgrid-jquery-rails'
 
 gem 'pg'
 

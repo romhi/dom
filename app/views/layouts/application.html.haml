@@ -10,7 +10,8 @@
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
     = csrf_meta_tags
   %body
-    = render partial: 'layouts/header'
+    = render 'layouts/header'
+    = render 'layouts/left_panel'
     = render 'layouts/body'
     = render 'layouts/footer'
 
