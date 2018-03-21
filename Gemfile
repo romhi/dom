@@ -31,6 +31,7 @@ gem 'font-awesome-rails'
 gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'jqgrid-jquery-rails'
+gem 'loofah', '~> 2.2.1'
 
 gem 'pg'
 
